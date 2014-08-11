@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<preference-headers xmlns:android="http://schemas.android.com/apk/res/android">
+    <header
+            android:fragment="ua.yalta.oficiant.Prefs$SettingsFragment"
+
+            android:title="Сервер обмена">
+        <extra android:name="identKey" android:value="server" />
+
+    </header>
+
+    <header
+            android:fragment="ua.yalta.oficiant.Prefs$SettingsFragment"
+            android:title="Основные">
+        <extra android:name="identKey" android:value="main" />
+
+    </header>
+
+    <header
+            android:fragment="ua.yalta.oficiant.Prefs$SettingsFragment"
+            android:title="Печать счета">
+        <!-- key/value pairs can be included as arguments for the fragment. -->
+        <extra android:name="identKey" android:value="print" />
+    </header>
+
+    <header
+            android:fragment="ua.yalta.oficiant.Prefs$DbSettingsFragment"
+            android:title="Умолчания">
+        <extra android:name="identKey" android:value="defs" />
+    </header>
+</preference-headers>

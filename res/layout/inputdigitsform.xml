@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center_vertical|center_horizontal"
+              android:animationCache="false"
+              android:background="#d09d11"
+              android:baselineAligned="false"
+              android:orientation="vertical"
+              android:paddingLeft="30dp"
+              android:paddingTop="8dp"
+              android:paddingBottom="12dp"
+              android:paddingRight="30dp"
+              android:minWidth="360dp">
+
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="22dp"
+            android:orientation="horizontal"
+            >
+
+        <TextView
+                android:id="@+id/bazed"
+                style="@style/OrderItemText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="6dp"
+                android:textColor="#ffdf130a"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text=""/>
+        <TextView
+                android:id="@+id/price"
+                style="@style/OrderItemText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="16dp"
+                android:textColor="#ff0a02df"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text=""/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="22dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/infoText"
+            style="@style/OrderItemText"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:paddingLeft="6dp"
+            android:text="tovar "/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="26dp"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:id="@+id/helpText"
+            style="@style/OrderItemText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:paddingLeft="6dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="К-во: "/>
+
+        <TextView
+            android:id="@+id/inputText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:shadowColor="#ffffff"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="1"
+            android:text="kvo"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#ff940208"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+
+        <Button
+            style="@style/ButtonText"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_blue"
+            android:onClick="NumBtnClick"
+            android:text="1"/>
+
+        <Button
+            style="@style/ButtonText"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_blue"
+            android:onClick="NumBtnClick"
+            android:text="2"
+            />
+
+        <Button
+            style="@style/ButtonText"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_blue"
+            android:onClick="NumBtnClick"
+            android:text="3"
+            />
+
+        <Button
+            style="@style/ButtonText"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_blue"
+            android:onClick="NumBtnClick"
+            android:text="4"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+
+        <Button
+            style="@style/ButtonText"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_blue"
+            android:onClick="NumBtnClick"
+            android:text="5"/>
+
+        <Button
+            style="@style/ButtonText"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_blue"
+            android:onClick="NumBtnClick"
+            android:text="6"/>
+
+        <Button
+            style="@style/ButtonText"
+            android:layout_width="0dip"
+            android:layout_weight="1"
+            android:background="@drawable/button_blue"
+            android:onClick="NumBtnClick"
+            android:text="7"/>
+
+        <Button
+            style="@style/ButtonText"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_blue"
+            android:onClick="NumBtnClick"
+            android:text="8"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+
+        <Button
+            style="@style/ButtonText"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_blue"
+            android:onClick="NumBtnClick"
+            android:text="9"/>
+
+        <Button
+            style="@style/ButtonText"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_blue"
+            android:onClick="NumBtnClick"
+            android:text="0"/>
+
+        <Button
+            android:id="@+id/btnPoint"
+            style="@style/ButtonText"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_blue"
+            android:onClick="NumBtnClick"
+            android:text="."/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+
+        <Button
+                style="@style/ButtonText"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_red"
+                android:onClick="CanselBtnClick"
+                android:text="Q"/>
+        <Button
+            style="@style/ButtonText"
+            android:layout_width="0dp"
+            android:layout_weight="1.1"
+            android:background="@drawable/button_yellow"
+            android:onClick="ClearBtnClick"
+            android:text="C"/>
+
+        <Button
+            style="@style/ButtonText"
+            android:layout_width="0dp"
+            android:layout_weight="1.4"
+            android:background="@drawable/button_green"
+            android:onClick="OKBtnClick"
+            android:text="OK"/>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:orientation="horizontal"
+            android:visibility="gone">
+
+        <TextView
+            android:id="@+id/keypanel_balance"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="2dp"
+            android:layout_weight="1"
+            android:text=""
+            android:textColor="#FF4200"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/keypanel_line"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="2dp"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text=""
+            android:textColor="#FF4200"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+</LinearLayout>

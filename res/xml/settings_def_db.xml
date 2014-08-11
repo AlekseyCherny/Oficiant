@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <Preference android:key="@string/pref_def_zal" android:title="Текущий зал продаж" />
+    <Preference android:key="@string/pref_def_printer" android:title="Принтер по умолчанию" />
+</PreferenceScreen>

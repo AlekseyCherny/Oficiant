@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:id="@+id/topPanOrder"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/panel_grad"
+        android:orientation="horizontal"
+        >
+
+
+
+        <Button
+            android:id="@+id/btn_print"
+            style="@style/ButtonPanel"
+            android:text="Встречка"></Button>
+
+        <TextView style="@style/VertDevider"></TextView>
+
+        <Button
+                android:id="@+id/btn_orderact"
+                style="@style/ButtonPanel"
+                android:text="..."></Button>
+
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listOrder"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/bottomPanOrder"
+        android:layout_below="@+id/topPanOrder"
+        android:background="#d09d11"
+        android:cacheColorHint="#00000000"
+        >
+
+    </ListView>
+
+    <LinearLayout
+        android:id="@+id/bottomPanOrder"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/panel_grad"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            style="@style/GroupText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Итого: "
+            android:id="@+id/twTotal"></TextView>
+    </LinearLayout>
+</RelativeLayout>

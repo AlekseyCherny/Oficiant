@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" android:title="Основные">
+    <EditTextPreference android:key="bell_qty_after_vstrecka"
+                        android:title="К-во звука после встречки"
+                        android:defaultValue="0" />
+    <CheckBoxPreference
+            android:key="pref_main_do_after_vstrecka"
+            android:title="После встречки выход"
+            android:defaultValue="false" />
+    <SwitchPreference
+            android:key="pref_main_after_vstrecka_avtoriz"
+            android:dependency="pref_main_do_after_vstrecka"
+            android:switchTextOff="В заказы "
+            android:switchTextOn="В авторизацию"/>
+    <CheckBoxPreference
+            android:key="pref_main_do_after_order"
+            android:title="После счета выход"
+            android:defaultValue="false" />
+    <SwitchPreference
+            android:key="pref_main_after_order_avtoriz"
+            android:dependency="pref_main_do_after_order"
+            android:switchTextOff="В заказы "
+            android:switchTextOn="В авторизацию"/>
+</PreferenceScreen>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest package="ua.yalta.oficiant"
+          xmlns:android="http://schemas.android.com/apk/res/android"
+          android:versionCode="1"
+          android:versionName="1.0">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="19"/>
+    <application
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen">
+        <activity
+            android:name="OficiantMain"
+            android:launchMode="singleTop"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape"
+
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Prefs"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape"></activity>
+        <activity
+            android:name=".TablesActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Holo.Light"
+            android:screenOrientation="landscape"></activity>
+        <activity
+            android:name=".OrderWorkActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape"></activity>
+        <activity
+                android:name=".OrdersByUserActivity"
+                android:label="@string/app_name"
+                android:screenOrientation="landscape"></activity>
+        <activity
+            android:name=".UpdateDB"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Holo.Light.Dialog.NoActionBar"></activity>
+        <activity
+                android:name=".forms.PodborListForm"
+                android:label="@string/app_name"
+                android:screenOrientation="landscape"></activity>
+        <activity
+                android:name=".forms.MultiSelectListForm"
+                android:label="@string/app_name"
+                android:screenOrientation="landscape"></activity>
+        <activity
+                android:name=".forms.ShapkaOrderForm"
+                android:label="@string/app_name"
+                android:screenOrientation="landscape"></activity>
+        <activity
+            android:name=".forms.InputDigitsForm"
+            android:theme="@android:style/Theme.Holo.Light.Dialog.NoActionBar"
+            android:screenOrientation="landscape"></activity>
+    </application>
+</manifest> 

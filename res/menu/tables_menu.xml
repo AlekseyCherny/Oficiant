@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_prefs"
+        android:showAsAction="ifRoom"
+        android:title="@string/prefs">
+    </item>
+    <item
+        android:id="@+id/menu_update"
+        android:showAsAction="ifRoom"
+        android:title="@string/update">
+    </item>
+    <item
+        android:id="@+id/menu_exit"
+        android:showAsAction="always"
+        android:title="@string/exit">
+    </item>
+</menu>

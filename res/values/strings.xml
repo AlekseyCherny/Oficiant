@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Официант 1.0</string>
+    <string name="exit">Выход</string>
+    <string name="prefs">Настройки</string>
+    <string name="update">Обновить</string>
+    <string name="act_delete">Удалить строку</string>
+    <string name="act_modif">Модификаторы</string>
+    <string name="act_cancel">Отмена</string>
+    <string name="act_choose">Выбор действия</string>
+
+    <string name="act_order_delete">Удалить заказ</string>
+    <string name="act_order_pay">Оплатить заказ</string>
+
+    <string name="pref_def_zal">pref_def_zal</string>
+    <string name="pref_def_printer">pref_def_printer</string>
+</resources>

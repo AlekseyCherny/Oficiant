@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+    >
+
+    <LinearLayout
+        android:id="@+id/lay_full_grp"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/panel_grad"
+            android:orientation="horizontal"
+            >
+
+            <Button
+                android:id="@+id/btn_root"
+                style="@style/ButtonPanel"
+                android:text="Меню"></Button>
+
+            <TextView style="@style/VertDevider"></TextView>
+
+            <Button
+                android:id="@+id/btn_rootg"
+                style="@style/ButtonPanel"
+                android:text="Печать"></Button>
+
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/Groupslist"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#d04111"
+            android:cacheColorHint="#00000000">
+        </ListView>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/devide_grp"
+        android:layout_width="1dp"
+        android:layout_height="fill_parent"
+
+        android:background="#cccccc">
+    </TextView>
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.1"
+        android:orientation="vertical"
+
+        >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/panel_grad"
+            android:orientation="horizontal"
+            >
+
+            <Button
+                android:id="@+id/btn_root2"
+                style="@style/ButtonPanel"
+                android:text="Меню"></Button>
+
+            <TextView style="@style/VertDevider"></TextView>
+
+            <Button
+                android:id="@+id/btn_rootg2"
+                style="@style/ButtonPanel"
+                android:text="Печать"></Button>
+
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/Goodslist"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#d09d11"
+            android:cacheColorHint="#00000000">
+
+        </ListView>
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <LinearLayout
+            android:id="@+id/topPanOrders"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/panel_grad"
+            android:orientation="horizontal"
+            >
+
+        <Button
+                android:id="@+id/btn_addorder"
+                style="@style/ButtonPanel"
+                android:text="Новый"
+          ></Button>
+
+        <TextView style="@style/VertDevider"
+       ></TextView>
+
+        <Button
+                android:id="@+id/btn_exitfromorders"
+                style="@style/ButtonPanel"
+                android:text="Выход"
+         ></Button>
+
+    </LinearLayout>
+
+    <ListView
+            android:id="@+id/listOrders"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@+id/bottomPanOrders"
+            android:layout_below="@+id/topPanOrders"
+            android:background="#d09d11"
+            android:cacheColorHint="#00000000"
+            >
+
+    </ListView>
+
+    <LinearLayout
+            android:id="@+id/bottomPanOrders"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/panel_grad"
+            android:orientation="horizontal"
+            >
+
+        <TextView
+                style="@style/GroupText"
+                android:text="Итого: "></TextView>
+    </LinearLayout>
+</RelativeLayout>

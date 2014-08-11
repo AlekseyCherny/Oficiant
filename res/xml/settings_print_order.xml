@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" android:title="Печать счета">
+
+    <EditTextPreference android:key="pref_print_order_header"
+            android:title="Заголовок чека"
+            android:defaultValue="Яхт-клуб" />
+
+    <EditTextPreference android:key="pref_print_order_footer"
+                android:title="Подвал чека"
+                android:defaultValue="Спасибо за покупку !" />
+    <CheckBoxPreference
+            android:key="pref_print_two_orders"
+            android:title="Печатать 2 экземпляра"
+            android:defaultValue="false" />
+
+</PreferenceScreen>

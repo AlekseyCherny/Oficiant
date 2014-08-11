@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:paddingTop="3dp"
+              android:paddingBottom="3dp"
+
+        >
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <TextView
+                style="@style/OrderItemText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Заказ № "
+                >
+        </TextView>
+    <TextView
+            android:id="@+id/orderlistNumber"
+            style="@style/OrderItemText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NNN"
+            >
+    </TextView>
+        <TextView
+                android:id="@+id/orderlistUser"
+                style="@style/OrderItemText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="User name here"
+                >
+        </TextView>
+        <TextView
+                android:id="@+id/orderlistDate"
+                style="@style/OrderItemText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="Date"
+                >
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <TextView
+                android:id="@+id/orderlistZal"
+                style="@style/OrderItemText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="zal"
+                android:textColor="#ffbd0000"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                >
+        </TextView>
+        <TextView
+                android:id="@+id/orderlistStol"
+                style="@style/OrderItemText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="#ffbd0000"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="stol"
+                >
+        </TextView>
+        <TextView
+                android:id="@+id/orderlistComment"
+                style="@style/OrderItemText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text=""
+                >
+        </TextView>
+
+
+        <TextView
+                android:id="@+id/orderlistSum"
+                style="@style/OrderItemText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.2"
+                android:gravity="right"
+                android:text="12345.00"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#ffbd0000"
+                >
+        </TextView>
+    </LinearLayout>
+</LinearLayout>

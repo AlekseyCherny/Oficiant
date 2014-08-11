@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:title="Настройки">
+    <PreferenceCategory
+        android:key="pref_key_server"
+        android:title="Сервер обмена">
+        <EditTextPreference
+            android:defaultValue="192.168.1.106"
+            android:key="pref_serverIP"
+            android:persistent="true"
+            android:summary="Server IP"
+            android:title="Server IP"/>
+        <EditTextPreference
+            android:defaultValue="8989"
+            android:key="pref_serverPort"
+            android:persistent="true"
+            android:summary="TCP port"
+            android:title="TCP port"/>
+        <EditTextPreference
+                android:defaultValue="yahtclub"
+                android:key="pref_server_basename"
+                android:persistent="true"
+                android:summary="Имя базы на сервере"
+                android:title="Имя базы"/>
+        <EditTextPreference
+                android:defaultValue="12341234"
+                android:key="pref_server_pin"
+                android:persistent="true"
+                android:summary="Пароль подключения"
+                android:title="Пароль"/>
+        <EditTextPreference
+                android:key="pref_server_prefix"
+                android:persistent="true"
+                android:summary="Уникальные 2 символа"
+                android:title="Префикс устройства"/>
+    </PreferenceCategory>
+</PreferenceScreen>
