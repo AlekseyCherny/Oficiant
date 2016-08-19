@@ -175,7 +175,7 @@ public class Exporter {
         }
 
         PostZipData(zipFileName,onlyFileName,docIds);
-        Log.d("UPLOAD","File zipped");
+        //Log.d("UPLOAD","File zipped");
     }
 
 

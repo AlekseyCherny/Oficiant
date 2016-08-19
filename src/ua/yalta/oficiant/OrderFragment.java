@@ -334,7 +334,10 @@ public class OrderFragment extends Fragment {
                 }else if(item==1){//delete
                     //TODO SHOW QESTION TO DELETE
                     if(Config.glUserUUID.equals("-1") || Config.glUserUUID.equals("-777")) {
-                        DBConnector.instance(Config.context).deleteOrder(orderID);
+                        //DBConnector.instance(Config.context).deleteOrder(orderID);
+                        DBConnector.instance(Config.context).tryingToDeleteOrder(orderID);
+                        Exporter exporter = new Exporter(null, 0);
+                        exporter.startExport();
                         getActivity().finish();
                     }else{
                         mCallback.onStatusChanged("Нет прав на удаление!");

@@ -3,6 +3,7 @@ package ua.yalta.oficiant.utils;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.GregorianCalendar;
 
 /**
  * Created with IntelliJ IDEA.
@@ -24,7 +25,9 @@ public class DateHelper {
 
     public static String formatFromPicker(int year, int month, int day) {
         SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
-        Date date = new Date(year - 1900, month, day);
+        Calendar calendar = new GregorianCalendar(year,month,day);
+
+        Date date = calendar.getTime();
         return dateFormat.format(date);
     }
 }

@@ -58,7 +58,7 @@ public class DBConnector {
         try {
             this.db = this.dbHelper.getWritableDatabase();
         } catch (SQLiteException ex) {
-            Log.v("Open database exception caught", ex.getMessage());
+            //Log.v("Open database exception caught", ex.getMessage());
             this.db = this.dbHelper.getReadableDatabase();
         }
     }
@@ -215,6 +215,23 @@ public class DBConnector {
         }
     }
 
+    public void tryingToDeleteOrder(long orderId){
+        String client = "Удаление заказа !";
+        String vidOplat =  "DELETE";
+
+        String query="UPDATE "
+                + Orders.TABLE_NAME
+                + " SET "
+                + Orders.OPLACHEN+" = '"+6+"'" +","
+                + Orders.KLIENT+" = '"+client+"'" +","
+                + Orders.VIDOPLAT +" = '"+vidOplat+"'"
+                + " WHERE "+Orders._ID+" = "+orderId+""
+                ;
+        ;
+        this.db.execSQL(query);
+    }
+
+
 
     public void setOrderSum(long orderId,String sum){
         String query="UPDATE "
@@ -361,7 +378,7 @@ public class DBConnector {
         String query="SELECT * "
                 + " FROM "
                 + Orders.TABLE_NAME
-                + " WHERE "+Orders.OPLACHEN +" = 1 AND "+Orders.SYNCED+" = 0 "
+                + " WHERE "+Orders.OPLACHEN +" <> 0 AND "+Orders.SYNCED+" = 0 "
                 ;
         return db.rawQuery(query,null);
     }
